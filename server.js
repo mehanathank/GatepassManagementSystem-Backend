@@ -13,7 +13,11 @@ connectDB();
 
 const allowedOrigins = [
   'https://gate-pass-management-system-eight.vercel.app',
+  'https://gatepass-management-system-two.vercel.app',
   'http://localhost:3000',
+  'http://localhost:3001',
+  'http://localhost:3002',
+  ...(process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : []),
 ];
 
 app.use(cors({
