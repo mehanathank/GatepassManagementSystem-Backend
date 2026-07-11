@@ -12,7 +12,6 @@ const app = express();
 connectDB();
 
 const allowedOrigins = [
-  'https://gate-pass-management-system-eight.vercel.app',
   'https://gatepass-management-system-two.vercel.app',
   'http://localhost:3000',
   'http://localhost:3001',
